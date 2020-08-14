@@ -2,26 +2,35 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    tools:context=".MainActivity">
+    android:layout_margin="8dp">
 
     <TextView
         android:id="@+id/tvComuna"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:background="#CDDC39"
+        android:gravity="center"
         android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvCiclovia"
-        android:layout_width="0dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="50dp"
+        android:background="#FF5722"
+        android:gravity="center"
         android:text="TextView"
+        android:textColor="#F8F2FF"
+        android:textSize="15sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tvComuna"
         app:layout_constraintStart_toEndOf="@+id/tvComuna" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
