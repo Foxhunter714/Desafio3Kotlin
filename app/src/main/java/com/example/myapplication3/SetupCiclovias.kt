@@ -39,4 +39,9 @@ class SetupCiclovias {
         }
         return lista
     }
+    fun getComunas(): List<String> {
+        val setComuna = mutableSetOf<String>()
+        comunas.forEach { s -> setComuna.add(s) }
+        return setComuna.toList()
+    }
 }
